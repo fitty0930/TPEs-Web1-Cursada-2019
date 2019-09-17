@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Escala 1:72 </title>
+    <link rel="stylesheet" href="lib/css/bootstrap.min.css"><!-- bootstrap css -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar-1">
+                            <span class="sr-only"> Menu </span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand"> Menú </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbar-1">
+                        <ul class="nav navbar-nav">
+                            <li> <a href="index.html"> Inicio </a></li>
+                            <li> <a href="ocho.html"> Escala 1:8 </a> </li>
+                            <li> <a href="cuarenta.html"> Escala 1:43 </a> </li>
+                            <li class="active"> <a href="setenta.html"> Escala 1:72 </a> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="container-fluid">
+            <h1> <b> Escala 1:72 </b> <small> (Principalmente colectivos) </small> </h1>
+        </div>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <section class="col-xs-12 col-sm-8 col-md-9 col-lg-9">
+                <div class="container-fluid espacios">
+                    <div class="row">
+                        <div class="col">
+                            <h4> Ingrese sugerencias </h4>
+                            <div class="form-group">
+                                <form id="nueva-Maqueta">
+
+                                    
+                                    <input type="text" class="form-control" id="Auto" placeholder="Vehículo">
+                                    <label for="Año"> </label>
+                                    <input type="number" class="form-control" id="Año" placeholder="Año">
+                                    <label for="espacios"></label>
+                                </form>
+
+                                <button id="enviarSugerencia"> Enviar </button>
+                                <button id="enviar3Sugerencia"> Enviar x3 </button>
+                            </div>
+                        </div>
+                        <input id="buscar" type="text" class="form-control" placeholder="Escriba algo para filtrar" />
+                        <label for="espacio"> </label>
+                        <input id="resaltar" type="text" class="form-control"
+                            placeholder="Escriba algo para resaltar" />
+                        <div class=>
+                            <h1> Sugerencia para maquetas </h1>
+                            <p id="js-cargando"> </p>
+                        </div>
+                        <div class="col">
+                            <div class="table-responsive container-fluid">
+                                <div id="tabla-sugerencias">
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th> Vehículo a maquetar </th>
+                                                <th> Año del mismo </th>
+                                                <th> Botones </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody id="autos-tabla"></tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                    <h4> Gracias por su opinión </h4>
+                    <small> Advertencia: puede que ninguna de sus sugerencias sean tenidas en cuenta </small>
+                </div>
+            </section>
+
+
+            <article class="col-xs-12 col-sm-4 col-md-3 col-lg-3">
+                <div class="container-fluid">
+                    <a href="https://coleccionescheveres.blogspot.com/2018/01/coleccion-autobuses-del-mundo-172.html">
+                        <h4> Autobuses del mundo </h4>
+                    </a>
+                    <img src="images/172autobuses.jpg" class="img-responsive img-rounded" alt="Autobuses del mundo">
+
+                    <p> Primeras entregas </p>
+                    <ol>
+                        <li> AEC (Reino Unido) </li>
+                        <li> Mercedes Benz LO1112 (Argentina) </li>
+                        <li> Renault (Francia) </li>
+                    </ol>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+    </div>
+
+    <footer>
+        <div class="container-fluid espacios">
+            <p> Como siempre le damos una recomendación: </p>
+            <blockquote>
+                <p>
+                    Si te compraste una miniatura nueva no se la podés mostrar a tu mujer porque después dice que gastas
+                    mucho, vos la tenés que poner en el lugar más recóndito de la vitrina, al último de los estantes y
+                    si es posible donde no hay luz sino se va a avivar y te comes un garrón de la gran flauta. Si se
+                    aviva vos estabas en un estado de locura compulsiva, lo viste barato en un grupo de Facebook y lo
+                    pudiste comprar con tarjeta, le decís que te salió la mitad de lo que te salió en verdad y que hasta
+                    que no lo terminas de pagar no compras nada más. Sos inimputable hermano, en 10 días estas comprando
+                    miniaturas de nuevo
+                </p>
+                <footer> El coleccionista inimputable </footer>
+            </blockquote>
+            <time>
+                <h3 class="piepagfecha"> Bolivar 21 de Mayo de 2019 </h3>
+            </time>
+        </div>
+    </footer>
+
+
+    <script src="lib/js/jquery.js"> </script> <!-- jquery -->
+    <script src="lib/js/bootstrap.min.js"> </script> <!-- bootstrap js -->
+    <script src="js/sugerencias.js"></script>
+</body>
+
+</html>

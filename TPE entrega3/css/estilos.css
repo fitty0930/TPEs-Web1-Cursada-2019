@@ -1,0 +1,82 @@
+header, footer{
+    background-color: rgb(9, 9, 80);
+    color: white;
+}
+
+.main{
+    background-color:grey;
+    color: black; 
+}
+
+.color1art{
+    background: rgb(141, 46, 46);
+    color: white;
+}
+
+.color2art{
+    background: rgb(156, 146, 146);
+    color: rgb(58, 2, 2);
+}
+
+section{
+    background-color: rgb(204, 204, 11); 
+    height: 100%;
+}
+
+article{
+    background-color: rgb(1, 131, 1);
+    color: black;
+    height: 100%;
+}
+
+h1{
+    text-align: center;
+}
+
+h4{
+    text-align: center;
+    color: black;
+}
+
+.centrado{
+    text-align: center;
+}
+
+.piepagfecha{
+    text-align: right;
+}
+
+.espacios{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mostar{
+    display:block;
+}
+
+.ocultar{
+    display:none;
+}
+
+.resaltado{
+    background-color: lightblue;
+}
+
+.noresaltado{
+    background-color: none;
+}
+
+/* using negative margins (doesn't break responsiveness)
+https://stackoverflow.com/questions/19695784/how-can-i-make-bootstrap-columns-all-the-same-height */
+
+.row{
+    overflow: hidden; 
+}
+
+[class*="col-"]{
+    margin-bottom: -99999px;
+    padding-bottom: 99999px;
+}
+
+/* codigo extraido */
